@@ -1,0 +1,26 @@
+section {
+    background-image: url(../images/greece.png);
+    background-color: blue;
+    background-size: cover;
+    height: 606px;
+    .greece {
+        @include myflex (column, center, center);
+        width: 1440px ;
+        height: 606px;
+        h1 {color: #FFF;
+            font-family: Helvetica;
+            font-size: 79px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;}
+        h2 {
+            color: #FFF;
+            font-family: Helvetica;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    
+}

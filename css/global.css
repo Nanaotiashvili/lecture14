@@ -61,7 +61,7 @@ a {
 }
 
 header {
-  padding: 78px 0;
+  padding: 10px 78px;
 }
 header .container {
   max-width: 1400px;
@@ -102,6 +102,7 @@ section {
   background-image: url(../images/greece.png);
   background-color: blue;
   background-size: cover;
+  max-width: 1440px;
   height: 606px;
 }
 section .greece {
@@ -128,4 +129,92 @@ section .greece h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+.container .threepart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 84px 0 0 84px;
+}
+.container .threepart .discover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  max-width: 318px;
+  gap: 20px;
+}
+.container .threepart .discover h3 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #636060;
+  font-size: 17px;
+}
+.container .threepart .discover h4 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #010101;
+  font-size: 28px;
+}
+.container .threepart .discover p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #636060;
+  font-size: 20px;
+}
+.container .threepart .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1022px;
+  gap: 33px;
+  margin-bottom: 140px;
+}
+.container .threepart .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 286px;
+  gap: 20px;
+}
+.container .threepart .cards .card h5 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #343232;
+  font-size: 19px;
+}
+.container .threepart .cards .card p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #636060;
+  font-size: 20px;
 }/*# sourceMappingURL=global.css.map */

@@ -17,3 +17,9 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
+@mixin fonts {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

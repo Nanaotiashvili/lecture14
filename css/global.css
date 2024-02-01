@@ -84,6 +84,11 @@ header .container .logo {
   height: 42px;
   display: flex;
 }
+@media (max-width: 700px) {
+  header .container nav {
+    display: none;
+  }
+}
 header .container nav ul {
   display: flex;
   justify-content: space-between;
@@ -97,11 +102,21 @@ header .container nav ul a {
   font-weight: 400;
   line-height: normal;
 }
+header .container .fa-bars {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  header .container .fa-bars {
+    display: block;
+  }
+}
 
 section {
   background-image: url(../images/greece.png);
   background-color: blue;
   background-size: cover;
+  background-position: center;
   max-width: 1440px;
   height: 606px;
 }
@@ -111,7 +126,7 @@ section .greece {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 1440px;
+  max-width: 1440px;
   height: 606px;
 }
 section .greece h1 {
@@ -122,6 +137,11 @@ section .greece h1 {
   font-weight: 700;
   line-height: normal;
 }
+@media (max-width: 800px) {
+  section .greece h1 {
+    font-size: 39px;
+  }
+}
 section .greece h2 {
   color: #FFF;
   font-family: Helvetica;
@@ -129,6 +149,11 @@ section .greece h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 800px) {
+  section .greece h2 {
+    font-size: 10px;
+  }
 }
 
 .container {
@@ -149,6 +174,13 @@ section .greece h2 {
   align-items: flex-start;
   flex-wrap: nowrap;
   padding: 84px 0 0 84px;
+}
+@media (max-width: 700px) {
+  .container .threepart {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .threepart .discover {
   display: flex;
@@ -189,9 +221,14 @@ section .greece h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 1022px;
+  max-width: 1022px;
   gap: 33px;
   margin-bottom: 140px;
+}
+@media (max-width: 700px) {
+  .container .threepart .cards {
+    flex-direction: column;
+  }
 }
 .container .threepart .cards .card {
   display: flex;
